@@ -4,6 +4,12 @@ import './App.scss';
 import { Button } from './Components'
 
 function App() {
+
+  const getSomething =  () => {
+    return(console.log("sonething"))
+  }
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -20,10 +26,11 @@ function App() {
         >
           Learn React
         </a>
-        <Button type="button" name="Sawan" varient="raised" />
+        <Button type="button" name="Sawan" varient="raised" onClick= {getSomething}/>
       </header>
     </div>
   );
+
 }
 
 export default App;
